@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="diseno.css">
+    <link rel="icon" href="img/bug.ico">
+</head>
+
+<body>
+    <!-- Menu Header -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Santiago</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#cv" onclick="seleccionar()">CV</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor img">
+                <img src="img/sensei.jpg" alt="">
+            </div>
+            <h1>Santiago Mosquera</h1>
+            <h2>Estudiante Ingeniería de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/zanti.mosquera1" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/santy.mosquera15/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/santiago-mosquera-chavarriaga-40886a174/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.link/c9yms9" target="_blank"><i class="fa-brands fa-whatsapp" ></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola bendiciones, soy Santiago Mosquera.</span> Estudiante de Ingeniera en sistemas e informática,
+                con
+                conocimientos básicos en redes, programación, manejo de
+                bases de datos en MySQL y PostgreSQL, Y elaboración de
+                páginas web.
+                Apasionado por el aprendizaje, los sistemas de información
+                y el análisis de datos. Con empatía enfocado en soluciones
+                asertivas, organizado, con iniciativa y adaptabilidad para el
+                desarrollo de tareas en equipo.</p>
+
+            <div class="fila">
+                <!--D Personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul style="list-style: none;">
+                        <li>
+                            <strong>Fecha Nacimiento</strong>
+                            15-Abril-2001
+                        </li>
+                        <li>
+                            <strong>Télefono</strong>
+                            (+57) 315-579-9322
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            santymosquera3@gmail.com
+                        </li>
+                        <li>
+                            <strong>Fecha Nacimiento</strong>
+                            15-Abril-2001
+                        </li>
+                        <li>
+                            <strong>Residencia</strong>
+                            Medellín Antioquia, Colombia
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Hobbies-->
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor-hobbies">
+                        <div class="hobbies">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-campground"></i>
+                            <span>ACAMPAR</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1C27Aj4SASdhSlzbMe49O3NzN7KQVix-w/view?usp=sharing" target="_blank">
+            <button>
+                CV <i class="fa-solid fa-download"></i>
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!--Habilidades Técnicas-->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="habilidad">
+                        <span>Java</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>HTML(CSS)</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Javascript</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Angular</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>SQL</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>C</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Spring Boot</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="habilidad">
+                        <span>Trabajo en Grupo</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Resolución de Problemas</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Comunicación</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Iniciativa</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Organizado</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Empatía</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV -->
+    <section class="cv" id="cv">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM VITAE</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>
+                        Estudios
+                    </h3>
+                    <div class="item izq">
+                        <h4>Bachiller Media Técnica</h4>
+                        <span class="casa">I.E Fe y Alegría Villa de la Candelaria</span>
+                        <span class="fecha">Diciembre - 2017</span>
+                        <div class="conectorizq">
+                            <div class="circuloizq">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Media Técnica en Sesarrollo de Software</h4>
+                        <span class="casa">Politécnico Jaime Isaza Cadavid</span>
+                        <span class="fecha">Noviembre - 2017</span>
+                        <div class="conectorizq">
+                            <div class="circuloizq">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas e informática</h4>
+                        <span class="casa">Universidad Pontificia Bolivariana</span>
+                        <span class="fecha">Actualmente</span>
+                        <div class="conectorizq">
+                            <div class="circuloizq">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <a href="https://drive.google.com/file/d/1SQERC0zVkFjAazZzmeOagU-4basYDBWw/view?usp=sharing" target="_blank"><h4>FrontEnd Web Developer</h4></a>
+                        <span class="casa">Curso Udemy - Universidad Desarrollo Web</span>
+                        <span class="fecha">2024</span>
+                        <div class="conectorizq">
+                            <div class="circuloizq">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <a href="https://drive.google.com/file/d/1liughJ0QodTp_jJ9kVc0h362xs-LCPPW/view?usp=sharing" target="_blank"><h4>Experto Angular</h4></a>
+                        <span class="casa">Curso Udemy - Universidad Angular</span>
+                        <span class="fecha">2024</span>
+                        <div class="conectorizq">
+                            <div class="circuloizq">
+
+                            </div>
+                        </div>
+                     </div>
+                     <div class="item izq">
+                        <a href="https://drive.google.com/file/d/17ddTXjhrgyx6JodUy5d85jrxj_hS-PAg/view?usp=sharing" target="_blank"><h4>Experto JavaScript</h4></a>
+                        <span class="casa">Curso Udemy - Universidad JavaScript</span>
+                        <span class="fecha">2024</span>
+                        <div class="conectorizq">
+                            <div class="circuloizq">
+
+                            </div>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>
+                        Experiencia
+                    </h3>
+                    <div class="item der">
+                        <h4>Transcriptor</h4>
+                        <span class="casa">Persona Natural</span>
+                        <span class="fecha">Septiembre 2020 - Noviembre 2020</span>
+                        <p>Escribir de forma precisa información en herramientas ofimáticas. </p>
+                        <div class="conectorder">
+                            <div class="circuloder">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Creador Experiencia</h4>
+                        <span class="casa">EMTELCO</span>
+                        <span class="fecha">Agosto 2021 - Diciembre 2021</span>
+                        <p>Atender y ofrecer soluciones a los usuarios que adquieren servicios
+                            de telecomunicación hogar en Tigo.</p>
+                        <div class="conectorder">
+                            <div class="circuloder">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar Administrativo</h4>
+                        <span class="casa">Soluciones Constructivas JM SAS</span>
+                        <span class="fecha">Junio 2022 - Julio 2022</span>
+                        <p>Organizar, ingresar y registrar solicitudes de empleados y
+                            administradores en herramientas ofimáticas.</p>
+                        <div class="conectorder">
+                            <div class="circuloder">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafiolio -->
+    <section class="portafolio" id="portafolio">
+        <h2 class="portafolio">PORTAFOLIO</h2>
+        <div class="contenido-seccion">
+            <p>Coming Soong</p>
+            <p> <span class="f1"><i class="fa-solid fa-laptop-code"></i></span>
+                <span class="f2"><i class="fa-solid fa-terminal"></i></span>
+                <span class="f3"><i class="fa-solid fa-gear"></i></span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <form action="https://formsubmit.co/santymosquera3@gmail.com" method="POST">
+                    <input name="nombre" type="nombre" placeholder="Nombre">
+                    <input name="ncontact" type="ncontact" placeholder="Número Contacto">
+                    <input name="email" type="email" placeholder="Email">
+                    <input name="tema" type="tema" placeholder="Tema">
+                    <textarea name="msj" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button id="miBoton">
+                        Enviar  <i class="fa-regular fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+
+                    <input type="hidden" name="_next" value="https://cvsanty.000webhostapp.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.69981367435!2d-75.66378722361773!3d6.244367672780121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1691088801101!5m2!1ses!2sco"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
