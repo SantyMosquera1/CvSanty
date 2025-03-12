@@ -546,7 +546,7 @@ html{
 }
 
 .portafolio .contenido-seccion{
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
     border: 2px solid #ffffff;
     box-shadow: inset 0 0 5px #ffffff, 0 0 10px #ffffff;
@@ -555,36 +555,52 @@ html{
     text-align: center;
 }
 
-.portafolio .contenido-seccion p{
-    font-family: 'Work Sans';
-    margin: 0;
-    font-size: 80px;
-    text-shadow: 0 0 5px #7dff6c, 0 0 15px #7dff6c, 0 0 30px #7dff6c, 0 0 50px #7dff6c;
+.portafolio .contenido-seccion .container{
+    width: 100%;
+  max-width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  transition: all 400ms;
 }
 
-.portafolio .contenido-seccion p span{
-    margin: 0;
-    font-size: 35px;
-    text-shadow: 0 0 5px #1eff00, 0 0 15px #1eff00, 0 0 30px #1eff00, 0 0 50px #1eff00;
+.portafolio .contenido-seccion .container .card{
+    flex: 1;
+  height: 100%;
+  transition: all 400ms;
+  cursor: pointer;
+  position: relative;
 }
 
-.f1{
-    animation: parpadear 2s infinite backwards steps(3);
+.portafolio .contenido-seccion .container .card > a{
+    display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.f2{
-    animation: parpadear 1.5s infinite backwards steps(2);
-}
-.f3{
-    animation: parpadear 3s infinite backwards steps(3);
+.portafolio .contenido-seccion .container .card > a > img{
+    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@keyframes parpadear{
-    to{
-        color: gray;
-        text-shadow: none;
-    }
+.portafolio .contenido-seccion .container .card:nth-child(odd){
+    translate: 0 -20px;
 }
+
+.portafolio .contenido-seccion .container .card:nth-child(even){
+    translate: 0 20px;
+} 
+
+.portafolio .contenido-seccion .container:hover .card:not(:hover) {
+    filter: grayscale(100%);
+  }
+  .portafolio .contenido-seccion .container .card:hover {
+    flex: 3;
+  }
 
 /* Contacto */
 
